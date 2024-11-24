@@ -1,10 +1,8 @@
-# serilog-sinks-mariadb [![Build status](https://ci.appveyor.com/api/projects/status/x19dx2d21h6aow9x/branch/master?svg=true)](https://ci.appveyor.com/project/Mantas/serilog-sinks-mariadb/branch/master) ![Nuget](https://img.shields.io/nuget/v/Serilog.Sinks.MariaDB.svg) ![Nuget](https://img.shields.io/nuget/dt/Serilog.Sinks.MariaDB.svg)
+# serilog-sinks-mariadb 
 
 A Serilog sink that writes events to **MariaDB/MySQL**. This sink will write the log event to a table. Important properties can also be written to their own separate columns. Properties by default are written to Text column and are formatted as JSON (custom formatter can be provided for them). This sink was hugelly inspired by [MSSqlServer sink](https://github.com/serilog/serilog-sinks-mssqlserver).
 
 This sink inherits from [`PeriodicBatching` Sink](https://github.com/serilog/serilog-sinks-periodicbatching) - events can be inserted as bulk for performance gains or one by one for reliability.
-
-**Nuget Package:** [Serilog.Sinks.MariaDB](https://www.nuget.org/packages/Serilog.Sinks.MariaDB/)
 
 ### Configuration Samples
 
